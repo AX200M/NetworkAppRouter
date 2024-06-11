@@ -1,0 +1,35 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="350"
+        x:Class="NetworkAppRouter.MainWindow"
+        Title="Network App Router"
+        TransparencyLevelHint="AcrylicBlur"
+        Background="Transparent">
+
+    <Panel>
+        <ExperimentalAcrylicBorder IsHitTestVisible="False">
+            <ExperimentalAcrylicBorder.Material>
+                <ExperimentalAcrylicMaterial
+                    BackgroundSource="Digger"
+                    TintColor="Black"
+                    TintOpacity="1"
+                    MaterialOpacity="0.65" />
+            </ExperimentalAcrylicBorder.Material>
+        </ExperimentalAcrylicBorder>
+        <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontWeight="Bold"
+            FontSize="20"
+            >Welcome to Network App Router! <LineBreak/><LineBreak/> Click the button below to begin!</TextBlock>
+            <Button HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="20"
+                    Width="50"
+                    HorizontalContentAlignment="Center"
+                    Click="BeginButton">-></Button>
+        
+    </Panel>
+</Window>
